@@ -1,0 +1,45 @@
+@import "./color.scss";
+
+.FilterTabs {
+  align-self: flex-start;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+
+.issueList__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: left;
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    width: 75vw;
+    height: 2vh;
+    background-color: $primary;
+    padding: 1rem 1.5rem;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+    &__description {
+      width: 70%;
+    }
+
+    &__state {
+      width: 15%;
+    }
+
+    &__date {
+      width: right;
+    }
+  }
+
+  &__loading {
+    padding: 20px;
+  }
+}

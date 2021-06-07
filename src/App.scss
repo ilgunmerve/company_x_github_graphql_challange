@@ -1,0 +1,14 @@
+@import "./styles/color.scss";
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+  .Tabs {
+    float: left;
+  }
+}

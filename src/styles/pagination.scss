@@ -1,0 +1,65 @@
+@import "./color.scss";
+
+.pagination {
+  display: flex;
+
+  .page {
+    display: flex;
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 0.4em 1.4em;
+    border-radius: 12px;
+
+    &_current {
+      background-color: $greyLight-2;
+    }
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0.3rem;
+      font-size: 1rem;
+      cursor: pointer;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 0.4rem;
+
+      &:hover {
+        color: var($primary);
+      }
+
+      &.active {
+        color: #ffffff;
+        background: var($primary);
+        font-weight: 600;
+        border: 1px solid var($primary);
+      }
+    }
+
+    button {
+      height: 1.5em;
+      align-self: center;
+      border: none;
+      background-color: $primary;
+      color: white;
+      border-radius: 8px;
+      font-size: 1em;
+      box-shadow: 0 0.8rem 2rem rgba(#5a6181, 0.05);
+
+      &:active {
+        font-size: 1rem;
+        transform: scale(0.9);
+        box-shadow: 0 3px 15px -2px;
+      }
+    }
+
+    button:disabled {
+      background-color: #cccccc;
+      color: $greyLight;
+    }
+  }
+}

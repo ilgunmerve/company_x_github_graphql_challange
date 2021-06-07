@@ -1,0 +1,45 @@
+@import "./color.scss";
+
+.issue {
+  display: flex;
+  width: 75vw;
+  height: 3vh;
+  font-family: "lato", sans-serif;
+  padding: 1rem 1.5rem;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin: 10px 0;
+  border-radius: 3px;
+  text-align: left;
+  font-size: small;
+  color: black;
+
+  &:hover {
+    background-color: $greyLight;
+  }
+
+  &__description {
+    width: 70%;
+  }
+
+  &__date {
+    width: right;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .issue {
+    display: flex;
+    width: 75vw;
+    flex-direction: column;
+    height: 10vh;
+    &__description {
+      width: 100%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      height: 8vh;
+    }
+  }
+}

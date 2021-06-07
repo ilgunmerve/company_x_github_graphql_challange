@@ -1,0 +1,13 @@
+@import "./color.scss";
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: $greyLight-3;
+  width: 60vw;
+  height: 80vh;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin: 10px 0;
+  border-radius: 3px;
+}
