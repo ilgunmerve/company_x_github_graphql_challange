@@ -4,6 +4,7 @@ import { GET_ISSUE } from "../gql-query/gql-query";
 import { useQuery } from "@apollo/react-hooks";
 import "../styles/issueDetail.scss";
 import { formatDate } from "../components/IssueItem";
+import { Link } from "react-router-dom";
 export const IssueDetail = memo(function IssueDetail({
   ...props
 }: RouteComponentProps) {
@@ -34,11 +35,15 @@ export const IssueDetail = memo(function IssueDetail({
 
   return (
     <>
+      <Link to={`/`}>
+        <button className="backbutton">
+            Back to Issues
+        </button>
+      </Link>
       <div className="detail">
         <h4>{title}</h4>
-        <p className="author">{author}</p>
-        <p>{createdDate}</p>
-        <p>{body}</p>
+        <span className="author">{author} On {createdDate}</span>
+        <p className="body">{body}</p>
         {comments.map((comment) => {
           <p>{comment}</p>;
         })}

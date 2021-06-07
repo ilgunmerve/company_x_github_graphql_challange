@@ -66,7 +66,7 @@ export const FilterTabs = memo(function Tabs() {
         }`}
         onClick={() => handleChangeFilter(OPEN)}
       >
-        Open
+        Open Issues
       </button>
       <button
         className={`button${
@@ -74,7 +74,7 @@ export const FilterTabs = memo(function Tabs() {
         }`}
         onClick={() => handleChangeFilter(CLOSED)}
       >
-        Close
+        Closed Issues
       </button>
     </div>
   );

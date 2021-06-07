@@ -11,3 +11,32 @@
   margin: 10px 0;
   border-radius: 3px;
 }
+
+.author {
+  text-align: right;
+  margin: 10px
+}
+
+.body {
+  text-align: left;
+  margin: 10px
+}
+
+.backbutton {
+  width: 120px;
+  cursor: pointer;
+  margin: 2px;
+  text-align: center;
+  background: $greyLight-3;
+  border: none;
+  height: 25px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  font-weight: bold;
+  color: $greyDark;
+
+  &:hover {
+    background: $greyLight-2;
+  }
+
+}
